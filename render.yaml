@@ -1,8 +1,9 @@
-# render.yaml
 services:
   - type: web
-    name: polyssights-bot
+    name: telegram-bot
     env: python
     buildCommand: pip install -r requirements.txt
     startCommand: python bot.py
-    pythonVersion: 3.11.0  # Use a stable, widely supported version
+    envVars:
+      - key: BOT_TOKEN
+        sync: false
