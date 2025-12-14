@@ -1,53 +1,23 @@
 # Core Telegram Bot Library
-python-telegram-bot==20.7
-python-telegram-bot[job-queue]==20.7
-
-# Alternative lightweight option (uncomment if you prefer)
-# pyTelegramBotAPI==4.16.1
-
-# Environment management
+python-telegram-bot[job-queue]==21.7  # Updated version for Python 3.13
 python-dotenv==1.0.0
 
-# Data handling
-pandas==2.1.4
-numpy==1.24.3
+# Remove pandas if not absolutely necessary for a simple Telegram bot
+# If you need data manipulation, use a lighter alternative:
+openpyxl==3.1.2  # For Excel handling if needed
 
-# HTTP requests (for fetching real crypto data later)
+# HTTP requests
 requests==2.31.0
-aiohttp==3.9.1
 
 # Async utilities
 asyncio==3.4.3
-aiofiles==23.2.1
 
-# For potential API integrations
-websockets==12.0
-beautifulsoup4==4.12.2
-
-# Database support (optional for storing user preferences)
-# SQLite (built-in) or choose one:
-# psycopg2-binary==2.9.9  # PostgreSQL
-# pymongo==4.6.1  # MongoDB
-# redis==5.0.1  # Redis cache
+# Database support (optional)
+# SQLite is built-in, no need for extra packages
 
 # Logging
 loguru==0.7.2
 
-# Development tools
-black==23.11.0
-pytest==7.4.3
-pytest-asyncio==0.21.1
-
 # Date/Time handling
 python-dateutil==2.8.2
 pytz==2023.3.post1
-
-# For potential crypto price API
-cryptocompare==0.7.5
-ccxt==4.1.59
-
-# Security
-cryptography==41.0.7
-
-# Error tracking (optional)
-sentry-sdk==1.40.0
